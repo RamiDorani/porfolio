@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+    <h1>My Book-Shop</h1>
+    <span onclick="OnAddBook()" class="add-books">Create a new book</span>
+    <section class="add-book" hidden>
+        <input class="book-name" type="text" placeholder="Enter book's name">
+        <input class="book-price" type="text" placeholder="Enter book's Price">
+        <button onclick="addBook()">Add</button>
+    </section>
+
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th onclick="onSortByName()" class="sort">Title <span class="arrow1" hidden></span></th>
+            <th onclick="onSortByPrice()" class="sort">Price <span class="arrow2" hidden></span></th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="table-body"></tbody>
+        </tbody>
+    </table>
+    
+    <div class="pages"></div>
+    </div>
+    <div class="modal" hidden>
+        <h3></h3>
+        <p></p>
+        <div class="rate">
+            <button onclick="OnDecreaseRate()">-</button>
+            <h4></h4>
+            <button onclick="onIncreaseRate()">+</button>
+        </div>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+</body>
+<script src="js/util.js"></script>
+<script src="js/storage-service.js"></script>
+<script src="js/book-service.js"></script>
+<script src="js//book-controller.js"></script>
+
+</html>

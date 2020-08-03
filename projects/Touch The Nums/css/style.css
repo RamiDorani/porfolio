@@ -1,0 +1,41 @@
+
+body {
+    background-color: rgb(126, 126, 126);
+}
+
+
+h2 {
+    font-style: italic;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell {
+    background-color: gold;
+    color: black;
+    border: solid rgb(2, 1, 1);
+}
+
+.cell:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.resetGame {
+    display: none;
+    position: relative;
+    left: 730px;
+    top: 50px;
+}

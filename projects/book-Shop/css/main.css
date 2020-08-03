@@ -1,0 +1,40 @@
+body {
+    background-color: skyblue;
+}
+
+.add-books{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sort, .next-page, .pages {
+    cursor: pointer;
+}
+
+.page:active {
+    background-color: rebeccapurple;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    margin-top: 15px;
+    width: 50vw;
+    height: 50vh;
+}
+
+.pages {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.add-book {
+    margin-top: 10px;
+}

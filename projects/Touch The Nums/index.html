@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Touch the Numbers</h1>
+        <h2>Choose a difficultly level</h2>
+        <button onclick="start(1)">4X4</button>
+        <button onclick="start(2)">5X5</button> 
+        <button onclick="start(3)">6X6</button>
+        <h2 class="timer-display"></h2>  
+        <div class="board-container">
+            <table border="1" cellpadding="10">
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+        <button class="resetGame" onclick="reset()">Reset</button>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

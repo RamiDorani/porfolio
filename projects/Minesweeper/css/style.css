@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  margin-top: 40px;
+  background-image: url(../images/mine-bomb.jpg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {  
+  background-color: rgba(255, 255, 255, 0.616);
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+h1 {
+  color: rgb(223, 39, 39);
+  background-color: black;
+  display: inline;
+}
+
+
+td {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+    
+button {
+    width: 100px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 10%;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow:2px 4px black;
+}
+
+.timer {
+  display: inline;
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  position: relative;
+  left: 250px;
+  top: 45px;
+  border: 1px solid black;
+  box-shadow:2px 4px black;
+}
+
+.resetBtn {
+    margin-top: 40px;
+    display: none;
+} 
+
+.hints-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hints {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    
+    top: 80px;
+}
+.hints.done {
+  cursor: none;
+}
+
+.alert {
+  font-size: 50px;
+  color: aliceblue;
+  display: hide;
+}
+
+
+.emoji {
+  font-size: 60px;
+}
+
+.mines {
+  width: 100px;
+  background-color: rgb(206, 11, 11);
+  font-size: 30px;
+  border: 1px solid black;
+  position: relative;
+  left: 600px;
+  bottom: 50px;
+  box-shadow:2px 4px black;
+}
